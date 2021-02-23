@@ -1,0 +1,96 @@
+
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+  }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.cropped {
+    width: 200px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+#profile{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 1.5rem;
+}
+
+.erfaring-content{
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+.erfaring-content ul{
+    padding-left: 4rem;
+}
+
+.main-content p{
+    padding-top: 2rem;
+    
+}
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+footer{
+    background-color:rgba(29, 25, 25, 0.253);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type:square;
+    justify-content: space-around;
+    margin-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
