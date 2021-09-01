@@ -90,44 +90,62 @@ button:hover{
 }
 
 .brief_image{
-    width: 500px;
+    width: 400px;
 }
 
 .brief_section{
     display: flex;
     justify-content: center;
+    flex-flow: column wrap;
     align-items: center;
-    height: 70vh;
+    height: 700px;
     background-color: rgba(72,69,210,0.7);
     position: relative;
+    flex-wrap: wrap;
 }
 
 .brief_text{
-    max-width: 500px;
+    max-width: 600px;
+    text-align: center;
 }
 
 .scroll_indicator{
-    position: absolute;
-    bottom: 15px;
+
 }
 
-
+.scroll_indicator a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 15px;
+    
+}
+.about_section>div{
+    padding-bottom: 40px;
+}
 
 .about_section{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     background-color: #24252A;
-    height: 70vh;
+    padding: 50px;
     position: relative;
+    flex-flow: row wrap;
+}
+
+
+.about_download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .about_text{
     max-width: 400px;
 }
-
 
 
 .profile_image{
@@ -140,9 +158,9 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: rgba(72,69,210,0.7);
-    height: 70vh;
+    height: 700px;
     position: relative;
 }
 
@@ -151,7 +169,7 @@ button:hover{
 }
 
 .carousel{
-    width: 40%;
+    width: 40vw;
 }
 
 .carousel-inner{
