@@ -9,10 +9,17 @@
     background-color: #24252A;
 }
 
-li, a, button, h1, h2,p{
+li, a, button{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    margin: 0
+}
+
+h1, h2,  h3, p, i{
+    font-family: "Poppins", sans-serif;
     color: #edf0f1;
     text-decoration: none;
     margin: 0
@@ -22,7 +29,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
+    
+    
     
 }
 
@@ -30,14 +39,17 @@ header{
     cursor: pointer;
 }
 
+
 .nav_links{
     list-style: none;
     margin: 0;
+  
 }
 
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
+    background-color: transparent;
 }
 
 .nav_links li a{
@@ -62,14 +74,6 @@ button:hover{
     background-color: rgba(72,69,210,0.8);
 }
 
-h1{
-    font-size: 40px;
-}
-
-h2{
-    font-size: 25px;
-}
-
 .brief_image{
     width: 500px;
 }
@@ -78,8 +82,26 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .brief_text{
     max-width: 500px;
+}
+
+.about_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_text{
+    max-width: 400px;
+}
+
+.profile_image{
+    width: 300px;
+    padding: 20px 20px;
+    border-radius: 250px;
 }
