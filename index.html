@@ -19,7 +19,7 @@
 
 <body>
     <header class="header" id="header">
-        <img src="images/logo.svg" alt="logo" class="logo">
+        <a href="#" class="logo"><i class="uil uil-user"></i> Jonas Gehrke</a>
         <nav>
             <ul class="nav_links">
                 <li><a href="#home">Home</a></li>
@@ -27,21 +27,26 @@
                 <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
-        <a href="#" class="cta"><button class="uil uil-envelope-alt"> Contact</button></a>
+        <a href="#footer" class="cta"><button class="uil uil-envelope-alt"> Contact</button></a>
     </header>
 
     <header class="header" id="mobile_header">
-        <img src="images/logo.svg" alt="logo" class="logo">
-        <nav>
-            <ul class="nav_mobile_links" id="nav_mobile_links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-            <a href="javascript:void(0);" class="icon" onclick="openNav()">
-                <i class="uil uil-bars"></i>
-            </a>
-        </nav>
+        
+        <a href="#" class="logo"><i class="uil uil-user"></i> Jonas Gehrke</a>
+        
+        
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="uil uil-bars"></i>
+        </a>
+    
+    <nav>
+        <ul class="nav_mobile_links" id="nav_mobile_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    
+    </nav>
     </header>
 
 
@@ -89,10 +94,30 @@
                 </div>
 
                 <div class="about_text">
-                    <h3>About me</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dolorum distinctio eius hic
-                        laboriosam velit delectus voluptas id tempora sed ullam ipsum quibusdam, omnis, quas aspernatur?
-                        Sint id eius aliquid.</p>
+                    <p>HTML</p>
+                    <div class="skills_bar">
+                        <div class="skills_bar_inner" id="skill_html"></div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="skills_bar">
+                        <div class="skills_bar_inner" id="skill_css"></div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="skills_bar">
+                        <div class="skills_bar_inner" id="skill_js"></div>
+                    </div>
+                    <p>Java</p>
+                    <div class="skills_bar">
+                        <div class="skills_bar_inner" id="skill_java"></div>
+                    </div>
+                    <p>Spring JDBC</p>
+                    <div class="skills_bar">
+                        <div class="skills_bar_inner" id="skill_jdbc"></div>
+                    </div>
+                    <p>Spring JPA</p>
+                    <div class="skills_bar">
+                        <div class="skills_bar_inner" id="skill_jpa"></div>
+                    </div>
                 </div>
 
             </div>
@@ -158,6 +183,16 @@
                 </a>
             </div>
         </section>
+
+        <footer class="footer" id="footer"> 
+            <div class="contact_info">
+                <ul class="contact_list">
+                    <li class="contact uil uil-envelope"> Jonasegehrke@gmail.com</li>
+                    <li class="contact uil uil-phone"> +45 53 68 07 08</li>
+                    <li class="contact uil uil-location-pin-alt"> Fredensborggade 6, 4th. 2200 København N</li>
+                </ul>
+            </div>
+        </footer>
 
     </main>
 

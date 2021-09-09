@@ -48,16 +48,51 @@ header{
     
 }
 
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+#mobile_header nav{
+    width: 100%;
+}
+
+.icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
 .nav_mobile_links{
     display: none;
+    list-style: none;
+    margin-top: 1.2rem;
+    animation: fadeIn 1s;
+    
 
+}
+.nav_mobile_links li{
+    display: inline-block;
+    text-decoration: none;
+    
 }
 
 
-.logo{
+
+
+.logo, .uil-user{
     cursor: pointer;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+    
 }
 
+.logo:hover, .logo:hover *{
+    color: rgba(72,69,210,1);
+    text-decoration: none;
+}
 
 
 .nav_links{
@@ -69,14 +104,17 @@ header{
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
-    background-color: transparent;
+    
 }
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
-.nav_links li a:hover{
+
+
+.nav_mobile_links li a:hover{
     color: rgba(72,69,210,1);
     text-decoration: none;
 }
@@ -95,7 +133,9 @@ button:hover{
 }
 
 .brief_image{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .brief_section{
@@ -150,13 +190,56 @@ button:hover{
 
 .about_text{
     max-width: 400px;
+    margin-bottom: 10px;
 }
+
+.skills_bar{
+    height: 10px;
+    width: 100%;
+    margin-bottom:15px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skills_bar_inner{
+    border-radius: 50px;
+    height: 10px;
+    background-color: rgba(72,69,210,1);
+}
+
+#skill_html{
+    width: 80%;
+}
+
+#skill_css{
+    width: 60%;
+}
+
+#skill_js{
+    width: 30%;
+}
+
+#skill_java{
+    width: 90%;
+}
+
+#skill_jdbc{
+    width: 90%;
+}
+
+#skill_jpa{
+    width: 25%;
+}
+    
 
 
 .profile_image{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     padding: 20px 20px;
     border-radius: 250px;
+    filter: grayscale(100%);
 }
 
 .projects_section{
@@ -187,6 +270,20 @@ button:hover{
     display: none;
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24252A;
+    position: relative;
+    flex-flow: row wrap;
+}
+
+.contact_list{
+    margin-top: 15px;
+    list-style: none;
+}
+
 @media (max-width: 575.98px) {
 
 }
@@ -201,11 +298,22 @@ button:hover{
     }
     #mobile_header{
         display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
+    .logo{
+        width: 50%;
+    }
+    .nav_mobile_links{
+        justify-content: space-around;
+    }
+    
+    
 }
 
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
+    
 
 }
 
